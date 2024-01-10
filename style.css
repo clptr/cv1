@@ -1,3 +1,11 @@
+:root {
+
+    --brownone : #FAF8F1;
+    --browntwo : #F8EAB9;
+    --brownthree : #E5BA73;
+    --brownfour : #C58940;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +20,7 @@ body>div.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FDFFAB;
+    background-color: var(--browntwo);
 }
 
 header{
@@ -73,6 +81,23 @@ header>nav>a{
     color: black;
 }
 
+section.front{
+    width: 80%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front>h1{
+    font-size: 30pt;
+}
+
+.front>p{
+    font-size: 18pt;
+}
+
 section.content{
     width: 80%;
     height: 590px;
@@ -86,28 +111,139 @@ section.content{
 }
 
 section.content>div.left{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 20px auto;
+    background-color: var(--brownone);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-div.left>p{
-    margin-top: 3px;
-    font-size: 13pt;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    display: flex;
+    align-items: center;
+}
+
+.skill-name {
+    width: 300px;
+    font-weight: bold;
+    color: #333; /* Warna teks */
+}
+
+.skill-bar1 {
+    height: 20px;
+    background-color: var(--brownthree); /* Warna latar belakang bar */
+    border-radius: 10px; /* Setengah dari tinggi untuk membuat bentuk setengah lingkaran */
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar1::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 15px); /* Sisa width dari bar */
+    height: 100%;
+    background-color: var(--brownfour); /* Warna sisa width */
+    border-radius: 0 10px 10px 0; /* Mengatur bentuk setengah lingkaran pada sisi kanan */
+}
+
+.skill-bar2 {
+    height: 20px;
+    background-color: var(--brownthree); /* Warna latar belakang bar */
+    border-radius: 10px; /* Setengah dari tinggi untuk membuat bentuk setengah lingkaran */
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar2::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 10px); /* Sisa width dari bar */
+    height: 100%;
+    background-color: var(--brownfour); /* Warna sisa width */
+    border-radius: 0 10px 10px 0; /* Mengatur bentuk setengah lingkaran pada sisi kanan */
+}
+
+.skill-bar3 {
+    height: 20px;
+    background-color: var(--brownthree); /* Warna latar belakang bar */
+    border-radius: 10px; /* Setengah dari tinggi untuk membuat bentuk setengah lingkaran */
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar3::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 20px); /* Sisa width dari bar */
+    height: 100%;
+    background-color: var(--brownfour); /* Warna sisa width */
+    border-radius: 0 10px 10px 0; /* Mengatur bentuk setengah lingkaran pada sisi kanan */
+}
+
+.skill-bar4 {
+    height: 20px;
+    background-color: var(--brownthree); /* Warna latar belakang bar */
+    border-radius: 10px; /* Setengah dari tinggi untuk membuat bentuk setengah lingkaran */
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar4::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 15px); /* Sisa width dari bar */
+    height: 100%;
+    background-color: var(--brownfour); /* Warna sisa width */
+    border-radius: 0 10px 10px 0; /* Mengatur bentuk setengah lingkaran pada sisi kanan */
+}
+
+.skill-bar5 {
+    height: 20px;
+    background-color: var(--brownthree); /* Warna latar belakang bar */
+    border-radius: 10px; /* Setengah dari tinggi untuk membuat bentuk setengah lingkaran */
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar5::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 25px); /* Sisa width dari bar */
+    height: 100%;
+    background-color: var(--brownfour); /* Warna sisa width */
+    border-radius: 0 10px 10px 0; /* Mengatur bentuk setengah lingkaran pada sisi kanan */
 }
 
 section.content>div.right{
-    width: 50%;
+    width: 45%;
+    height: 280px;
+    background-color: var(--brownone);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 div.right>h1{
     margin-bottom: 20px;
+
 }
 
 div.right> ul li{
@@ -116,3 +252,15 @@ div.right> ul li{
     margin: 3px 0;
 }
 
+footer{
+    width: 80%;
+    height: 50px;
+    border-top: black 0.15em solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>p{
+    padding: 10px 0;
+}
