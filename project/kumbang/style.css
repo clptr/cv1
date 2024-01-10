@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap ');
+
+:root {
+
+    --brownone : #FAF8F1;
+    --browntwo : #F8EAB9;
+    --brownthree : #E5BA73;
+    --brownfour : #C58940;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+body>div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.whatsapp-icon{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.whatsapp-icon i{
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div.header-block {
+    width: 100%;
+    height: 5em;
+    background-color: var(--browntwo);
+}
+
+header>nav{
+    width: 80%;
+    height: 75px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+header>nav>ul{
+    list-style-type: none;
+}
+
+header>nav>ul li{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.nav-item{
+    border-right: 1px rgba(0, 0, 0, 0.8) solid;
+}
+
+header>nav>ul li:last-child{
+    border-right: none;
+}
+
+section.jumbotron{
+    width: 100%;
+    height: 40em;
+    background: url("n.jpg") center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav.jumbotron-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+div.circle-nav{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 0.75em;
+    background-color: var(--brownone);
+    margin: 0.75em;
+    
+} */
+
+section.content-one {
+    width: 80%;
+    height: 30em;
+    box-sizing: border-box;
+    /* background-color: black; untuk melihat box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.content-one>div.left, section.content-one>div.right{
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; untuk melihat box */
+    justify-content: flex-start;
+}
+
+section.content-one>div.left .item, section.content-one>div.right .item{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+section.content-one>div.left div.enroll-btn{
+    width: 50%;
+    height: 40px;
+    background-color: var(--brownfour);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content-two{
+    width: 100%;
+    height: 30em;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content-two>.container{
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    /* background-color: azure; */
+}
+
+section.content-two>.container>.content{
+    width: 100%;
+    height: 100%;
+    background: url(a.jpeg) center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section.content-two .content{
+    color: cornsilk;
+}
+
+section.content-two>.container>h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section.content-three{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+section.content-three>.container{
+    width: 100%;
+    height: 100%;
+    background: url(v.jpg) center center / cover;
+}
+
+section.content-three>.container>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    font-size: 50px;
+}
+
+section.content-three>.container>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    font-size: 25px;
+}
+
+section.content-three>.container>.content{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    /* background-color: #C58940; */
+    /* border: white 2px solid; */
+}
+
+section.content-three>.container>.content>.left, section.content-three>.container>.content>.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white 2px solid;
+    padding: 0 5px;
+}
+
+section.content-four{
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+} 
+
+section.content-four>div.left, section.content-four>div.right{
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: white;/* untuk melihat box */
+    justify-content: flex-start;
+}
+
+
+section.content-five{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+section.content-five>h1, section.content-five>h2{
+    padding: 0 3em;
+}
+
+section.content-five>h2{
+    border: white 2px solid;
+}
+
+footer, footer>.container{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: var(--browntwo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>.container{
+    width: 80%;
+}
+
+footer section.top{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    /* background-color: aquamarine */
+    display: flex;
+    flex-direction: row;
+    border-bottom: var(--brownone) 0.25em solid;
+    justify-content: space-between;
+}
+
+footer section.top>div.item{
+    width: 23%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--browntwo);
+    display: flex;
+    flex-direction: column;
+}
+
+div.item-social-media{
+    padding: 4em 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.item-social-media>img{
+    width: 10em;
+}
+
+div.item-social-media>h2{
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+div.item-social-media>div.social-icons{
+    width: 40%;
+    display: flex;
+    font-size: 2em;
+    justify-content: space-between;
+}
+
+div.circle-social-icon{
+    width: 0.5em;
+    height: 0.5em;
+    background-color: white;
+    border-radius: 0.25em;
+}
+
+div.item-about, div.item-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em 0;
+}
+
+div.item-contact{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0;
+}
+
+div.item-contact>h2, div.item-about>h2, div.item-news>h2{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+div.item-contact>ul{
+    list-style-type: none;
+    margin-top: 1.5em;
+}
+
+div.item-about>ul{
+    margin: 1.3em 1em;
+}
+
+div.item-news>ul{
+    margin: 1.3em 1em;
+}
+
+div.item-contact ul li, div.item-about ul li, div.item-news ul li{
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+
+footer section.bottom{
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: var(--browntwo);
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer section.bottom>p{
+    font-size: small;
+}

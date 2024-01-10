@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body>div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FDFFAB;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+}
+
+header>nav{
+    width: 100%;
+    height: 50px;
+    background-color: #D9EDBF;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+header>nav>ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+header>nav>ul li{
+    display: inline;
+    text-transform: capitalize;
+    /* font-weight: bold; */
+    padding: 0 20px;
+}
+
+header>nav>ul li> a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item{
+    border-right: 1px rgba(0, 0, 0, 0.8) solid;
+}
+
+header>nav>ul li:first-child{
+    border-left: none;
+}
+
+header>nav>a{
+    width: 10em;
+    height: 2em;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+section.content{
+    width: 80%;
+    height: 590px;
+    /* background-color: green; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+section.content>div.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.left>p{
+    margin-top: 3px;
+    font-size: 13pt;
+}
+
+section.content>div.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.right>h1{
+    margin-bottom: 20px;
+}
+
+div.right> ul li{
+    list-style-type: decimal;
+    font-size: 13pt;
+    margin: 3px 0;
+}
+

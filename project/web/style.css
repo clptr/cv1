@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap ');
+
+:root {
+
+    --green : #CCD5AE;
+    --brown : #E9EDC9;
+    --pink : #FEFAE0;
+    --peach : #FAEDCD;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+body>div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--green);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div.header-block{
+    width: 100%;
+    height: 5em;
+    background-color: var(--brown);
+}
+
+header>nav{
+    width: 60%;
+    height: 75px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+
+header>nav>ul{
+    list-style-type: none;
+}
+
+header>nav>ul li{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.nav-item{
+    border-right: 1px rgba(0, 0, 0, 0.8) solid;
+}
+
+header>nav>ul li:last-child{
+    border-right: none;
+}
+
+section.jumbotron{
+    width: 100%;
+    height: 35em;
+    background: url(b.webp) center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content-one{
+    width: 80%;
+    height: 25em;
+    box-sizing: border-box;
+    /* background-color: #C58940; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.content-one>.container{
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+section.content-one>div.left>p{
+    margin-top: 1em;
+}
+
+section.content-one>div.left>h2{
+    margin-top: 1em;
+}
+
+section.content-one>div.left, section.content-one>div.right{
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; untuk melihat box; */
+    justify-content: flex-start;
+    margin-top: 3em;
+}
+
+section.content-one>div.left>h2, section.content-one>div.left>p{
+    margin-top: 1em;
+}
+
+section.content-two{
+    width: 80%;
+    height: 25em;
+    box-sizing: border-box;
+    /* background-color: #C58940; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.content-two>div.c1, section.content-two>div.c2, section.content-two>div.c3{
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* background-color: white;  */
+    justify-content: flex-start;
+}
+
+section.content-two>div.c1>img{
+    margin-top: 2em;
+}
+
+section.content-two>div.c2>img, section.content-two>div.c3>img{
+    margin-top: 3.7em;
+}
+
+footer, footer>.container{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>.container{
+    width: 80%;
+}
+
+footer section.top{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    border-bottom: peachpuff 0.25em solid;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+footer section.top>div.info{
+    width: 23%;
+    height: 100%;
+    box-sizing: border-box;
+    /* background-color: var(--peach); */
+    display: flex;
+    flex-direction: column;
+}
+
+div.info>h1{
+    font-size: 20px;
+}
+
+div.info>p{
+    font-size: 12px;
+    margin-top: 0.8em;
+}
+
+div.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+footer section.bottom{
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: var(--browntwo);
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer section.bottom>p{
+    font-size: small;
+}
